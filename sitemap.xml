@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://fanlu1994.github.io/2021/03/29/electron%E5%AD%A6%E4%B9%A0-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%88%86%E7%B1%BB%E5%99%A8/</loc>
+    
+    <lastmod>2021-04-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/about/index.html</loc>
+    
+    <lastmod>2021-03-14</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/2021/03/14/%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%BC%80%E5%A7%8B/</loc>
+    
+    <lastmod>2021-03-14</lastmod>
+    
+  </url>
+  
+
+  <url>
+    <loc>https://fanlu1994.github.io/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>https://fanlu1994.github.io/tags/electron/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/tags/javascript/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/tags/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://fanlu1994.github.io/tags/%E6%84%9F%E6%83%B3/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>https://fanlu1994.github.io/categories/%E6%9D%82%E8%AE%B0/</loc>
+    <lastmod>2021-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+</urlset>
