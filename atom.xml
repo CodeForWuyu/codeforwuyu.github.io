@@ -6,7 +6,7 @@
   <link href="https://fanlu1994.github.io/atom.xml" rel="self"/>
   
   <link href="https://fanlu1994.github.io/"/>
-  <updated>2021-04-07T14:47:30.236Z</updated>
+  <updated>2021-05-11T13:08:32.483Z</updated>
   <id>https://fanlu1994.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ssh远程免密登陆</title>
+    <link href="https://fanlu1994.github.io/2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/"/>
+    <id>https://fanlu1994.github.io/2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/</id>
+    <published>2021-05-11T13:05:55.000Z</published>
+    <updated>2021-05-11T13:08:32.483Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p> 被登陆服务器为A机器</p><p> 客户端机器为B机器</p></blockquote><ol><li><p>B机器执行命令生成公钥和私钥</p><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">ssh-keygen -t rsa<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>生成的秘钥在用户目录下，例如C:\Users\admin\ .ssh</p></li><li><p>复制公钥文件内容：id_rsa.pub</p></li><li><p>A机器同样执行生成ssg-keygen的命令</p><blockquote><p>在用户目录.ssh目录下创建authorized_keys文件，将第二步复制的内容粘贴到该文件中</p></blockquote></li><li><p>修改A机器上的权限</p><ul><li>chmod 700 .ssh</li><li>chmod 600 authorized_keys</li><li>修改StrictModes(/etc/ssh/sshd_config文件中)项必须设置成no；</li></ul></li><li><p>测试连接<br>在B机器上命令行输入测试</p><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">ssh 用户名@A机器ip地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果没有提示输入密码，直接登录成功，则表示免密登录配置成功！</p></li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt; 被登陆服务器为A机器&lt;/p&gt;
+&lt;p&gt; 客户端机器为B机器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;B机器执行命令生成公钥和私钥&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-cmd&quot; data-l</summary>
+      
+    
+    
+    
+    
+    <category term="linux" scheme="https://fanlu1994.github.io/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>electron学习:实现一个文件分类器</title>
