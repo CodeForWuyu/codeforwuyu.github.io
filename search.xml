@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>linux使用pyinstaller</title>
+      <link href="2021/06/02/linux%E4%BD%BF%E7%94%A8pyinstaller/"/>
+      <url>2021/06/02/linux%E4%BD%BF%E7%94%A8pyinstaller/</url>
+      
+        <content type="html"><![CDATA[<h3 id="安装pyinstaller"><a href="#安装pyinstaller" class="headerlink" title="安装pyinstaller"></a>安装pyinstaller</h3><p><a href="https://www.pyinstaller.org/downloads.html">Downloads — PyInstaller bundles Python applications</a></p><p>下载</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget https://github.com/pyinstaller/pyinstaller/releases/download/v4.2/PyInstaller-4.2.tar.gztar -xvf PyInstaller-4.2.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>build</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd pyinstaller-4.2python3 setup.py build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>install</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo python3 setup.py install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>测试是否安装成功</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pyinstaller --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="打包python项目"><a href="#打包python项目" class="headerlink" title="打包python项目"></a>打包python项目</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pyinstaller -F program_exporter.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vue3+tailwind+axios前端项目搭建</title>
+      <link href="2021/05/11/vue3-tailwind-axios%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/"/>
+      <url>2021/05/11/vue3-tailwind-axios%E5%89%8D%E7%AB%AF%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ssh远程免密登陆</title>
       <link href="2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/"/>
       <url>2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/</url>
