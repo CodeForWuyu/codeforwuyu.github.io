@@ -68,8 +68,8 @@
       },
       donate: {
         enable: false,
-        alipay: 'https://pic.izhaoo.com/alipay.jpg',
-        wechat: 'https://pic.izhaoo.com/wechat.jpg'
+        alipay: 'https://imgtu.com/i/RuTiFJ',
+        wechat: 'https://imgtu.com/i/RuTFY9'
       },
       galleries: {
         enable: true
@@ -97,9 +97,9 @@
         },
       },
       qrcode: {
-        enable: false,
-        type: 'url',
-        image: '',
+        enable: true,
+        type: 'image',
+        image: '/images/theme/wechat.jpg',
       },
       toc: {
         enable: true
@@ -115,8 +115,8 @@
         page_black_list: ''
       },
       search: {
-        enable: false,
-        path: 'search.xml'
+        enable: true,
+        path: '/search.xml'
       }
     }
   </script>
@@ -125,9 +125,9 @@
 
   
 
-<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-
+<meta name="generator" content="Hexo 5.4.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 
 <body class="lock-screen">
@@ -142,15 +142,21 @@
         <i class="iconfont iconhome j-navbar-back-home"></i>
       
       
+        <i class="iconfont iconqrcode j-navbar-qrcode"></i>
+      
       
         <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
       
+      
+        <i class="iconfont iconsearch j-navbar-search"></i>
       
     </div>
     <div class="center">vue2+tailwind+elementui+axios项目搭建</div>
     <div class="right">
       <i class="iconfont iconmenu j-navbar-menu"></i>
     </div>
+    
+      <div id="qrcode-navbar"></div>
     
   </nav>
 
@@ -190,6 +196,10 @@
     <h1 class="head-title">vue2+tailwind+elementui+axios项目搭建</h1>
     <div class="head-info">
       <span class="post-info-item"><i class="iconfont iconcalendar"></i>June 02, 2021</span>
+      
+        <span class="post-info-item">
+          <i class="iconfont iconeye"></i><span id="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/" class="leancloud" data-flag-title="vue2+tailwind+elementui+axios项目搭建"></span>
+        </span>
       
       <span class="post-info-item"><i class="iconfont iconfont-size"></i>15325</span>
     </div>
@@ -1025,9 +1035,33 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
       
         <section class="comments">
   
-    <div class="btn" id="comments-btn">查看评论</div>
   
-  
+<div id="valine"></div>
+<script defer src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  window.onload = function () {
+    var loadValine = function () {
+      new Valine({
+        el: '#valine',
+        app_id: "69dsLimanzESX0iaHwJALaIv-gzGzoHsz",
+        app_key: "Q1IhoacJwYJeAV9NimoRPQoN",
+        placeholder: "留个言交流一下吧",
+        avatar: "mp",
+        pageSize: "10",
+        lang: "zh-CN",
+      });
+    }
+    if ( false ) {
+      $("#comments-btn").on("click", function () {
+        $(this).hide();
+        loadValine();
+      });
+    } else {
+      loadValine();
+    }
+  };
+</script>
+
 </section>
       
     </section>
@@ -1099,6 +1133,20 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 
   
   
+    <div class="search">
+  <div class="search-container">
+    <div class="search-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <div class="search-input-wrapper">
+      <i class="search-input-icon iconfont iconsearch"></i>
+      <input class="search-input" type="search" id="search-input" placeholder="Search..." autofocus autocomplete="off"
+        autocorrect="off" autocapitalize="off">
+    </div>
+    <div class="search-output" id="search-output"></div>
+  </div>
+</div>
+  
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
@@ -1134,12 +1182,53 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 
 
 
+  
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+
+
 
 
 <script src="/js/utils.js"></script>
 <script src="/js/script.js"></script>
 
 
+
+  <script>
+  $.getScript("//cdn.jsdelivr.net/npm/leancloud-storage@4.1.0/dist/av-min.js", () => {
+
+    AV.init({
+      appId: '69dsLimanzESX0iaHwJALaIv-gzGzoHsz',
+      appKey: 'Q1IhoacJwYJeAV9NimoRPQoN',
+      serverURLs: 'https://leancloud.cn/',
+    });
+
+    const showCount = (Counter) => {
+      const asyncLimit = new AsyncLimit(2);
+      $(".leancloud").each(async (e) => {
+        const url = $(".leancloud").eq(e).attr('id').trim();
+        const query = new AV.Query("Counter");
+        query.equalTo("words", url);
+        let count = await asyncLimit.run(() => query.count());
+        $(".leancloud").eq(e).text(count ? count : '--');
+      });
+    }
+
+    const addCount = (Counter) => {
+      const url = $(".leancloud").length === 1 ? $(".leancloud").attr('id').trim() : 'https://fanlu1994.github.io';
+      var query = new Counter;
+      query.save({
+        words: url
+      });
+    }
+
+    $(function () {
+      const Counter = AV.Object.extend("Counter");
+      addCount(Counter);
+      showCount(Counter);
+    });
+
+  });
+</script>
 
 
 

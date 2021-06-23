@@ -44,7 +44,7 @@
     <link href="https://fanlu1994.github.io/2021/06/02/linux%E4%BD%BF%E7%94%A8pyinstaller/"/>
     <id>https://fanlu1994.github.io/2021/06/02/linux%E4%BD%BF%E7%94%A8pyinstaller/</id>
     <published>2021-06-02T15:29:43.000Z</published>
-    <updated>2021-06-02T15:30:38.219Z</updated>
+    <updated>2021-06-23T14:08:11.306Z</updated>
     
     <content type="html"><![CDATA[<h3 id="安装pyinstaller"><a href="#安装pyinstaller" class="headerlink" title="安装pyinstaller"></a>安装pyinstaller</h3><p><a href="https://www.pyinstaller.org/downloads.html">Downloads — PyInstaller bundles Python applications</a></p><p>下载</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">wget https://github.com/pyinstaller/pyinstaller/releases/download/v4.2/PyInstaller-4.2.tar.gztar -xvf PyInstaller-4.2.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>build</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">cd pyinstaller-4.2python3 setup.py build<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>install</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">sudo python3 setup.py install<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>测试是否安装成功</p><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pyinstaller --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="打包python项目"><a href="#打包python项目" class="headerlink" title="打包python项目"></a>打包python项目</h3><pre class="line-numbers language-shell" data-language="shell"><code class="language-shell">pyinstaller -F program_exporter.py<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
     
@@ -55,7 +55,15 @@
       
     
     
+    <content src="https://fanlu1994.github.io/images/pyinstaller.jpg" type="image"/>
     
+    
+    <category term="python" scheme="https://fanlu1994.github.io/categories/python/"/>
+    
+    
+    <category term="linux" scheme="https://fanlu1994.github.io/tags/linux/"/>
+    
+    <category term="python" scheme="https://fanlu1994.github.io/tags/python/"/>
     
   </entry>
   
@@ -64,7 +72,7 @@
     <link href="https://fanlu1994.github.io/2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/"/>
     <id>https://fanlu1994.github.io/2021/05/11/ssh%E8%BF%9C%E7%A8%8B%E5%85%8D%E5%AF%86%E7%99%BB%E9%99%86/</id>
     <published>2021-05-11T13:05:55.000Z</published>
-    <updated>2021-05-11T13:08:32.483Z</updated>
+    <updated>2021-06-23T14:08:35.357Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p> 被登陆服务器为A机器</p><p> 客户端机器为B机器</p></blockquote><ol><li><p>B机器执行命令生成公钥和私钥</p><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">ssh-keygen -t rsa<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>生成的秘钥在用户目录下，例如C:\Users\admin\ .ssh</p></li><li><p>复制公钥文件内容：id_rsa.pub</p></li><li><p>A机器同样执行生成ssg-keygen的命令</p><blockquote><p>在用户目录.ssh目录下创建authorized_keys文件，将第二步复制的内容粘贴到该文件中</p></blockquote></li><li><p>修改A机器上的权限</p><ul><li>chmod 700 .ssh</li><li>chmod 600 authorized_keys</li><li>修改StrictModes(/etc/ssh/sshd_config文件中)项必须设置成no；</li></ul></li><li><p>测试连接<br>在B机器上命令行输入测试</p><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">ssh 用户名@A机器ip地址<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>如果没有提示输入密码，直接登录成功，则表示免密登录配置成功！</p></li></ol>]]></content>
     
@@ -81,6 +89,10 @@
       
     
     
+    <content src="https://fanlu1994.github.io/images/ssh.png" type="image"/>
+    
+    
+    <category term="linux" scheme="https://fanlu1994.github.io/categories/linux/"/>
     
     
     <category term="linux" scheme="https://fanlu1994.github.io/tags/linux/"/>
@@ -119,7 +131,7 @@
     <link href="https://fanlu1994.github.io/2021/03/14/%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%BC%80%E5%A7%8B/"/>
     <id>https://fanlu1994.github.io/2021/03/14/%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%BC%80%E5%A7%8B/</id>
     <published>2021-03-14T11:55:30.000Z</published>
-    <updated>2021-03-14T12:10:01.896Z</updated>
+    <updated>2021-06-23T14:09:38.899Z</updated>
     
     <content type="html"><![CDATA[<p>​    上周通过RSS订阅了不少博客,那么多大神很让我敬佩,印象深刻的比如云风大佬,coolshell,鸟窝等等.  不仅在工作上特别牛逼, 在知识输出上也坚持那么多年, 孜孜不倦.  </p><p>​    我虽然是个菜鸡,但也有个成为大牛的梦想. 所以尝试一下写一写技术博客.  其实之前在自己租的腾讯云服务器上,基于halo部署了一个博客, halo是基于springboot的.  但是自己租的服务器太low,打开博客费了老劲,只能用来学习linux,学习docker啥的.  所以今天用hexo部署到了github上. 希望以后能有稳定的产出.  初步希望一个月能写两篇有质量的博客.  加油!!!</p>]]></content>
     
@@ -130,6 +142,8 @@
 &lt;p&gt;​    我虽然是个菜鸡,但也有个成为大牛的梦想. 所以尝试一下写一写</summary>
       
     
+    
+    <content src="https://fanlu1994.github.io/images/fanlu_144x144.png" type="image"/>
     
     
     <category term="杂记" scheme="https://fanlu1994.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
