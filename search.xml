@@ -46,7 +46,7 @@ epub_path <span class="token operator">=</span> <span class="token string">"D:\B
 </ol>
 <h2 id="loudspeaker-具体实现"><a href="#loudspeaker-具体实现" class="headerlink" title=":loudspeaker:具体实现"></a><span class="github-emoji"><span>📢</span><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4e2.png?v8" aria-hidden="true" onerror="this.parent.classList.add('github-emoji-fallback')"></span>具体实现</h2><h3 id="1-首页实现"><a href="#1-首页实现" class="headerlink" title="1 首页实现"></a>1 首页实现</h3><p>​    首页需求很简单，只要一个输入框，用来选择文件夹，然后将文件夹存储到vuex, 并根据文件夹,获取所有文件列表,存储到vuex</p>
 <p>​    实现界面如下：</p>
-<p><img src="/2021/03/29/electron%E5%AD%A6%E4%B9%A0-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%88%86%E7%B1%BB%E5%99%A8/app\fanlu1994.github.io\source_posts\electron学习-实现一个文件分类器.assets\cGgbwT" alt="首页"></p>
+<p><img src="/images/%E9%A6%96%E9%A1%B5.png"></p>
 <h3 id="2-文件夹选择"><a href="#2-文件夹选择" class="headerlink" title="2 文件夹选择"></a>2 文件夹选择</h3><ul>
 <li>remote.dialog.showOpenDialog是electon提供的对话框函数</li>
 </ul>
@@ -148,7 +148,7 @@ epub_path <span class="token operator">=</span> <span class="token string">"D:\B
 <li><p>每类文件都有一个移动按钮和复制按钮</p>
 </li>
 </ul>
-<p><img src="/2021/03/29/electron%E5%AD%A6%E4%B9%A0-%E5%AE%9E%E7%8E%B0%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E5%88%86%E7%B1%BB%E5%99%A8/app\fanlu1994.github.io\source_posts\electron学习-实现一个文件分类器.assets\cGgHmV" alt="文件列表页面"></p>
+<p><img src="/images/image-20210407222908712.png"></p>
 <h3 id="6-同类型文件复制-移动"><a href="#6-同类型文件复制-移动" class="headerlink" title="6 同类型文件复制/移动"></a>6 同类型文件复制/移动</h3><ol>
 <li><p>首先选择一个文件夹</p>
 </li>
@@ -240,10 +240,12 @@ epub_path <span class="token operator">=</span> <span class="token string">"D:\B
 </ul>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
       <tags>
         <tag>electron</tag>
         <tag>javascript</tag>
-        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -337,10 +339,7 @@ python3 setup.py build<span aria-hidden="true" class="line-numbers-rows"><span><
   <entry>
     <title>vue2+tailwind+elementui+axios项目搭建</title>
     <url>/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>写到中间，突然意识到这个教程是写个vue初学者的。 后面考虑写一个vue的简单教程。</p>
-</blockquote>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="nodejs-amp-npm"><a href="#nodejs-amp-npm" class="headerlink" title="nodejs&amp;npm"></a>nodejs&amp;npm</h3><blockquote>
+    <content><![CDATA[<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><h3 id="nodejs-amp-npm"><a href="#nodejs-amp-npm" class="headerlink" title="nodejs&amp;npm"></a>nodejs&amp;npm</h3><blockquote>
 <p>nodejs是javescript代码运行的基础</p>
 <p>npm是nodejs的包管理管理工具，前端开发用到的第三方包都可以用它来安装</p>
 </blockquote>
@@ -416,7 +415,7 @@ npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <p>命令行cd到项目目录； </p>
 <p>运行npm run dev，可以看到项目运行的url</p>
 <p>打开浏览器输入该url，就可以看到项目的初始样子了：</p>
-<p><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210525132241052.png" alt="image-20210525132241052"></p>
+<p><img src="/images/image-20210525132241052.png"></p>
 <h3 id="项目目录说明"><a href="#项目目录说明" class="headerlink" title="项目目录说明"></a>项目目录说明</h3><ul>
 <li><p>build  </p>
 <blockquote>
@@ -426,7 +425,7 @@ npm -v<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
 <li><p>config</p>
 <blockquote>
 <p>项目的一些配置。</p>
-<p><strong>特别注意：</strong>如果在开发过程中需要修改项目运行的ip或者端口号，可以修改config/index.js中的配置<br><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210525132646932.png" alt="image-20210525132646932"></p>
+<p><strong>特别注意：</strong>如果在开发过程中需要修改项目运行的ip或者端口号，可以修改config/index.js中的配置<br><img src="/images/image-20210525132646932.png"></p>
 </blockquote>
 </li>
 <li><p>node_modules</p>
@@ -869,7 +868,7 @@ export default {
 <li>因为我们的数据是一个数组，所以选择v-for（<a href="https://blog.csdn.net/amyleeYMY/article/details/84940020">vue2之v-for详解</a>）来遍历渲染数据</li>
 </ol>
 <p>最后打开页面，可以看到数据已经成功获取并渲染到页面上啦： （如果没有获取到的话，请F12 - network . 刷新页面看看网络请求成功发送）</p>
-<p><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210527104748364.png" alt="image-20210527104748364"></p>
+<p><img src="/images/image-20210527104748364.png"></p>
 <h3 id="element-ui"><a href="#element-ui" class="headerlink" title="element-ui"></a>element-ui</h3><blockquote>
 <p>经过上面的操作步骤，我们已经成功获得数据并渲染到了页面上。 但一个大问题，我们的页面太丑了。 前端一般使用css来修改样式的，但是css比较复杂，学习成本也比较高。 我们需要傻瓜式的ui组件。 好在很多开源的工具我们都可以拿来用，比如Vuetify 、 Vue Material、Element UI、Buefy 、Quasar 、Bootstrap Vue 等等。  我们这里以<a href="https://element.eleme.cn/#/zh-CN/component/installation"> Element</a>来举例，它是由饿了么前端团队开发的UI组件库</p>
 </blockquote>
@@ -885,7 +884,7 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span><span class="token punctuation">&gt;</span></span>前往子页面1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>打开页面，可以看到按钮变成了elementui定义的样式：</p>
-<p><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210527115242944.png" alt="image-20210527115242944"></p>
+<p><img src="/images/image-20210527115242944.png"></p>
 <p>当然，还有很多elementui组件的样式和功能，请参照官方文档进行使用</p>
 <h3 id="tailwindcss"><a href="#tailwindcss" class="headerlink" title="tailwindcss"></a>tailwindcss</h3><blockquote>
 <p>有时发现elementui的样子并不是我们想要的，并且很难修改。想要自己写样式，但又懒得学css。 这时就可以使用tailwindcss，它封装了非常多的样式，可以直接以class的形式定义组件的样式</p>
@@ -957,7 +956,7 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <li>rounded-2xl  定义按钮的圆角</li>
 </ul>
 <p>效果如下</p>
-<p><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210527122422292.png" alt="image-20210527122422292"></p>
+<p><img src="/images/image-20210527122422292.png"></p>
 <p>更多丰富的用法请参考<a href="https://www.tailwindcss.cn/docs">中文文档 - Tailwind CSS 中文文档</a></p>
 <h3 id="vuex"><a href="#vuex" class="headerlink" title="vuex"></a>vuex</h3><blockquote>
 <p>这是vue的全局状态组件，也就是全局变量组件。 在项目中可能存在一些全局变量，使用vuex就可以方便的获取、同步修改、异步修改这些变量</p>
@@ -1086,7 +1085,7 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 <pre class="line-numbers language-html" data-language="html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>el-button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>danger<span class="token punctuation">"</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ReduceCount<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>reduce count<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>el-button</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
 </ol>
 <p>现在可以打开网页测试一下啦</p>
-<p><img src="/2021/06/02/vue2-tailwind-elementui-axios%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/app\fanlu1994.github.io\source_posts\vue2-tailwind-elementui-axios项目搭建.assets\image-20210527201535270.png" alt="image-20210527201535270"></p>
+<p><img src="/images/image-20210527201535270.png"></p>
 <h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><pre class="line-numbers language-none"><code class="language-none">npm run dev<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h2 id="打包"><a href="#打包" class="headerlink" title="打包"></a>打包</h2><pre class="line-numbers language-cmd" data-language="cmd"><code class="language-cmd">npm run build<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -1150,5 +1149,12 @@ Vue<span class="token punctuation">.</span><span class="token function">use</spa
 </li>
 </ul>
 ]]></content>
+      <categories>
+        <category>前端</category>
+      </categories>
+      <tags>
+        <tag>javascript</tag>
+        <tag>vue</tag>
+      </tags>
   </entry>
 </search>
